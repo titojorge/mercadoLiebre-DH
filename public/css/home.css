@@ -14,15 +14,29 @@ body {
   padding: 5px;
   width: 30px;
   height: 30px;
+  color: #39b54a;
   border: 1px solid #39b54a;
   background-color: #FFF;
   border-radius: 50%;
   position: absolute;
   right: 20px;
   top: -15px;
+  transition-duration: 500ms;
 }
 .product-desc-box {
   position: relative;
+}
+.product{
+  display: none;
+}
+.articulo_shadow:hover{
+  .product{
+    display: block;
+  }
+  box-shadow: 0px 10px 30px rgb(0, 0, 0);
+  .product-delivery-icon{
+    transform: rotateZ(-90deg);
+  }
 }
 .text-center {
   text-align: center;
@@ -126,14 +140,38 @@ article{
 }
 
 .ultima-visita {
+  margin: 20px 0px;
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
 }
 .ofertas {
+  margin: 20px 0px;
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
+}
+.footer-contain{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  text-align: center;
+  margin: 10px 20px;
+  padding: 0px 25px;
+  font-size: 10px;
+}
+.Copyright{
+  margin: 10px 20px;
+  padding: 0px 15px;
+  text-align: center;
+}
+.icon-footer{
+  color: #03264c;
+  font-size: 25px;
+}
+.icon-footer:hover{
+  color: #1259c3;
+  font-size: 25px;
 }
 
 @media (min-width:361px) {
